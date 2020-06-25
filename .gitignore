@@ -1,0 +1,16 @@
+
+quartus_prime/software/candy_gw_10m16_bsp/
+
+quartus_prime/software/candy_gw_10m16/obj/default/
+
+quartus_prime/db/
+
+quartus_prime/software/.metadata/
+
+quartus_prime/incremental_db/
+
+quartus_prime/candy_gw_qsys/synthesis/submodules/
+
+*.tcl~
+
+*.bak
