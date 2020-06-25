@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Thu Jun 25 23:52:27 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : CANDY_GW
+Top-level Entity Name : CANDY_GW
+Family : MAX 10
+Device : 10M16SAU169C8G
+Power Models : Final
+Total Thermal Power Dissipation : 892.01 mW
+Core Dynamic Thermal Power Dissipation : 582.65 mW
+Core Static Thermal Power Dissipation : 230.69 mW
+I/O Thermal Power Dissipation : 78.67 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

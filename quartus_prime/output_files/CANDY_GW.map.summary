@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Thu Jun 25 23:50:52 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : CANDY_GW
+Top-level Entity Name : CANDY_GW
+Family : MAX 10
+Total logic elements : 13,475
+    Total combinational functions : 9,814
+    Dedicated logic registers : 8,234
+Total registers : 8234
+Total pins : 85
+Total virtual pins : 0
+Total memory bits : 444,224
+Embedded Multiplier 9-bit elements : 6
+Total PLLs : 1
+UFM blocks : 1
+ADC blocks : 0

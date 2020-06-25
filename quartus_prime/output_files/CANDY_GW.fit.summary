@@ -1,0 +1,18 @@
+Fitter Status : Successful - Thu Jun 25 23:52:09 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : CANDY_GW
+Top-level Entity Name : CANDY_GW
+Family : MAX 10
+Device : 10M16SAU169C8G
+Timing Models : Final
+Total logic elements : 12,251 / 15,840 ( 77 % )
+    Total combinational functions : 9,837 / 15,840 ( 62 % )
+    Dedicated logic registers : 8,124 / 15,840 ( 51 % )
+Total registers : 8193
+Total pins : 85 / 130 ( 65 % )
+Total virtual pins : 0
+Total memory bits : 444,224 / 562,176 ( 79 % )
+Embedded Multiplier 9-bit elements : 6 / 90 ( 7 % )
+Total PLLs : 1 / 1 ( 100 % )
+UFM blocks : 1 / 1 ( 100 % )
+ADC blocks : 0 / 1 ( 0 % )
