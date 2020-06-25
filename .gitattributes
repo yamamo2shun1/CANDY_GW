@@ -1,0 +1,5 @@
+*.f3z filter=lfs diff=lfs merge=lfs -text
+*.fsch filter=lfs diff=lfs merge=lfs -text
+*.fbrd filter=lfs diff=lfs merge=lfs -text
+*.f3d filter=lfs diff=lfs merge=lfs -text
+fusion360/* filter=lfs diff=lfs merge=lfs -text
