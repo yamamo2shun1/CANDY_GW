@@ -1,0 +1,485 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2019  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+# Date created = 07:28:44  April 02, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		CANDY_GW_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M16SAU169C8G
+set_global_assignment -name TOP_LEVEL_ENTITY CANDY_GW
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 19.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "07:28:44  APRIL 02, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE UFBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 169
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
+set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_IN[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_IN[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_IN[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_IN[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_IN[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_IN[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_IN[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_IN[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to UART_TX
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_BITCLOCK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_CLKOUT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_DATA_IN
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_DATA_OUT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_LRCLOCK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_RESET
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_SCL
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_SDA
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_BITCLOCK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_LRCLOCK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_SDO
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_BA[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_BA[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CAS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CKE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_LDQM
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_RAS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_UDQM
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_WE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GROVE1[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GROVE1[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PMOD1[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PMOD1[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PMOD1[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PMOD1[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PMOD2[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PMOD2[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PMOD2[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PMOD2[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to QSPI_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to QSPI_CS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to QSPI_IO[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to QSPI_IO[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to QSPI_IO[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to QSPI_IO[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RST
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to UART_CTS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to UART_RTS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to UART_RX
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLK
+set_location_assignment PIN_G5 -to CLK
+set_location_assignment PIN_K2 -to QSPI_IO[3]
+set_location_assignment PIN_L3 -to QSPI_CLK
+set_location_assignment PIN_M2 -to QSPI_CS
+set_location_assignment PIN_L2 -to QSPI_IO[2]
+set_location_assignment PIN_M1 -to QSPI_IO[1]
+set_location_assignment PIN_L1 -to QSPI_IO[0]
+set_location_assignment PIN_N2 -to LED[3]
+set_location_assignment PIN_M3 -to LED[2]
+set_location_assignment PIN_N3 -to LED[1]
+set_location_assignment PIN_N4 -to LED[0]
+set_location_assignment PIN_L10 -to OE
+set_location_assignment PIN_L5 -to PMOD2[0]
+set_location_assignment PIN_M5 -to PMOD2[1]
+set_location_assignment PIN_K5 -to PMOD2[2]
+set_location_assignment PIN_J5 -to PMOD2[3]
+set_location_assignment PIN_H10 -to PMOD1[0]
+set_location_assignment PIN_M7 -to PMOD1[1]
+set_location_assignment PIN_N7 -to PMOD1[2]
+set_location_assignment PIN_N6 -to PMOD1[3]
+set_location_assignment PIN_C1 -to ADC_IN[0]
+set_location_assignment PIN_C2 -to ADC_IN[1]
+set_location_assignment PIN_D1 -to ADC_IN[2]
+set_location_assignment PIN_B1 -to ADC_IN[3]
+set_location_assignment PIN_E1 -to ADC_IN[5]
+set_location_assignment PIN_E3 -to ADC_IN[6]
+set_location_assignment PIN_F1 -to ADC_IN[7]
+set_location_assignment PIN_B7 -to CODEC_SCL
+set_location_assignment PIN_A7 -to CODEC_SDA
+set_location_assignment PIN_B4 -to CODEC_RESET
+set_location_assignment PIN_A6 -to CODEC_BITCLOCK
+set_location_assignment PIN_A8 -to CODEC_CLKOUT
+set_location_assignment PIN_B5 -to CODEC_DATA_IN
+set_location_assignment PIN_A5 -to CODEC_DATA_OUT
+set_location_assignment PIN_B6 -to CODEC_LRCLOCK
+set_location_assignment PIN_K10 -to DAC_SDO
+set_location_assignment PIN_K11 -to DAC_LRCLOCK
+set_location_assignment PIN_L11 -to DAC_BITCLOCK
+set_location_assignment PIN_D8 -to GROVE1[0]
+set_location_assignment PIN_D9 -to GROVE1[1]
+set_location_assignment PIN_N5 -to RST
+set_location_assignment PIN_N8 -to DRAM_ADDR[4]
+set_location_assignment PIN_M8 -to DRAM_ADDR[5]
+set_location_assignment PIN_M9 -to DRAM_ADDR[8]
+set_location_assignment PIN_N11 -to DRAM_ADDR[11]
+set_location_assignment PIN_N12 -to DRAM_ADDR[9]
+set_location_assignment PIN_M13 -to DRAM_DQ[10]
+set_location_assignment PIN_N10 -to DRAM_ADDR[6]
+set_location_assignment PIN_M12 -to DRAM_DQ[8]
+set_location_assignment PIN_N9 -to DRAM_ADDR[7]
+set_location_assignment PIN_M11 -to DRAM_UDQM
+set_location_assignment PIN_M10 -to DRAM_ADDR[12]
+set_location_assignment PIN_J10 -to DRAM_DQ[15]
+set_location_assignment PIN_L12 -to DRAM_DQ[9]
+set_location_assignment PIN_K12 -to DRAM_DQ[11]
+set_location_assignment PIN_L13 -to DRAM_DQ[12]
+set_location_assignment PIN_K13 -to DRAM_DQ[14]
+set_location_assignment PIN_J13 -to DRAM_DQ[13]
+set_location_assignment PIN_H13 -to DRAM_CKE
+set_location_assignment PIN_G13 -to DRAM_BA[1]
+set_location_assignment PIN_G12 -to DRAM_BA[0]
+set_location_assignment PIN_F13 -to DRAM_RAS
+set_location_assignment PIN_E13 -to DRAM_DQ[0]
+set_location_assignment PIN_F12 -to DRAM_CAS
+set_location_assignment PIN_E12 -to DRAM_LDQM
+set_location_assignment PIN_D13 -to DRAM_DQ[2]
+set_location_assignment PIN_C13 -to DRAM_DQ[4]
+set_location_assignment PIN_B12 -to DRAM_DQ[7]
+set_location_assignment PIN_B11 -to DRAM_ADDR[0]
+set_location_assignment PIN_C12 -to DRAM_DQ[5]
+set_location_assignment PIN_B13 -to DRAM_DQ[6]
+set_location_assignment PIN_C11 -to DRAM_WE
+set_location_assignment PIN_D12 -to DRAM_DQ[3]
+set_location_assignment PIN_D11 -to DRAM_DQ[1]
+set_location_assignment PIN_A12 -to DRAM_CS
+set_location_assignment PIN_A9 -to DRAM_ADDR[3]
+set_location_assignment PIN_B10 -to DRAM_ADDR[1]
+set_location_assignment PIN_A10 -to DRAM_ADDR[2]
+set_location_assignment PIN_A11 -to DRAM_ADDR[10]
+set_location_assignment PIN_J12 -to DRAM_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to altera_reserved_tck
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to altera_reserved_tdi
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to altera_reserved_tdo
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to altera_reserved_tms
+set_location_assignment PIN_H1 -to UART_CTS
+set_location_assignment PIN_J1 -to UART_RTS
+set_location_assignment PIN_H2 -to UART_RX
+set_location_assignment PIN_H3 -to UART_TX
+set_global_assignment -name ENABLE_OCT_DONE ON
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS OUTPUT DRIVING GROUND"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE output_files/avalon_i2s_dma_check.stp
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_BLOCK_TYPE=AUTO" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334528" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INCREMENTAL_ROUTING=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_PIPELINE=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_PIPELINE=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_COUNTER_PIPELINE=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=24" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=1024" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=1024" -section_id auto_signaltap_0
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to CODEC_SCL
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to CODEC_SDA
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE i2s_to_codec.vhd
+set_global_assignment -name VHDL_FILE i2c_master_top.vhd
+set_global_assignment -name VHDL_FILE i2c_master_byte_ctrl.vhd
+set_global_assignment -name VHDL_FILE i2c_master_bit_ctrl.vhd
+set_global_assignment -name VHDL_FILE avalon2wb.vhd
+set_global_assignment -name VHDL_FILE avalon2pwm.vhd
+set_global_assignment -name QSYS_FILE candy_gw_qsys.qsys
+set_global_assignment -name VHDL_FILE candy_gw.vhd
+set_global_assignment -name SDC_FILE candy_gw.sdc
+set_global_assignment -name SIGNALTAP_FILE output_files/avalon_wb_check.stp
+set_global_assignment -name SIGNALTAP_FILE output_files/avalon_pwm_check.stp
+set_global_assignment -name VHDL_FILE avalon_i2s.vhd
+set_global_assignment -name SIGNALTAP_FILE output_files/avalon_i2s_check.stp
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_global_assignment -name SIGNALTAP_FILE output_files/avalon_i2s_dma_check.stp
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[116] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|counter[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[117] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|counter[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[118] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|counter[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[119] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|counter[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[120] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|counter[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[121] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|counter[5]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|BITCLK_O_SLV" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|DATA_I_MST" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|DATA_O_MST" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|DATA_O_SLV" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|LRCLK_I_MST" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|LRCLK_O_SLV" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_address[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_address[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_address[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_waitrequest" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_write" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[22] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[23] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[24] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[27] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[28] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[29] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[30] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[31] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[32] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[33] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[34] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[35] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[36] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[37] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[38] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[39] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[40] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[41] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[42] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm1_writedata[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[43] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_address[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[44] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_address[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[45] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_address[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[46] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_read" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[47] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[48] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[49] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[50] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[51] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[52] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[53] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[54] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[55] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[56] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[57] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[58] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[59] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[60] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[61] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[62] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[63] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[64] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[65] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[66] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[67] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[68] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[69] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[70] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[71] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[72] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[73] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[74] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[75] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[76] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[77] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[78] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_readdata[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[79] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|av_mm2_waitrequest" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[80] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_address[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[81] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_address[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[82] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_write" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[83] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[84] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[85] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[86] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[87] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[88] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[89] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[90] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[91] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[92] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[93] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[94] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[95] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[96] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[97] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[98] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[99] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[100] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[101] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[102] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[103] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[104] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[105] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[106] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[107] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[108] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[109] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[110] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[111] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[112] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[113] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[114] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|avs_s1_writedata[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[115] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|bit_clk_mst" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|LRCLK_I_MST" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=1" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=sld_reserved_CANDY_GW_auto_signaltap_0_1_7f86," -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[122] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|counter_s[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[123] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|counter_s[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[124] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|counter_s[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[125] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|counter_s[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[126] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|counter_s[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[127] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|counter_s[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[128] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|lrclk_ff[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[129] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|lrclk_ff[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[130] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|lrclk_last" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[131] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[132] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[133] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[134] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[135] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[136] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[137] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[138] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[139] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[140] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[141] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[142] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[143] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[144] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[145] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[146] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[147] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[148] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[149] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[150] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[151] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[152] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[153] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[154] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[155] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[156] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[157] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[158] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[159] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[160] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[161] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[162] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|odata[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[163] -to "candy_gw_qsys:u0|AVALON_I2S:avalon_i2s_0|out_flag" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=164" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=164" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to "candy_gw_qsys:u0|candy_gw_qsys_altpll_0:altpll_0|c3" -section_id auto_signaltap_0
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_FILE db/avalon_i2s_dma_check_auto_stripped.stp
