@@ -14,3 +14,5 @@ quartus_prime/candy_gw_qsys/synthesis/submodules/
 *.tcl~
 
 *.bak
+
+quartus_prime/output_files/
