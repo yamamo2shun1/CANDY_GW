@@ -120,7 +120,6 @@ architecture RTL of CANDY_GW is
 			onbrd_led_pwm_out                 : out   std_logic_vector(3 downto 0);                     -- pwm_out
 			i2s_bclk_mst_clk                  : in    std_logic                     := 'X';             -- clk
 			i2s_lrclk_i_mst                   : in    std_logic                     := 'X';             -- lrclk_i_mst
---			i2s_bitclk_i_mst                  : in    std_logic                     := 'X';             -- bitclk_i_mst
          i2s_data_i_mst                    : in    std_logic                     := 'X';             -- data_i_mst
          i2s_data_o_mst                    : out   std_logic;                                        -- data_o_mst
          i2s_lrclk_o_slv                   : out   std_logic;                                        -- lrclk_o_slv
@@ -156,23 +155,6 @@ architecture RTL of CANDY_GW is
          sda_padoen_o  : out std_logic                     -- i2c data line output enable, active low
 		);
 	end component i2c_master_top;
-	
---	component i2s_to_codec
---		generic(
---			DATA_WIDTH: integer range 0 to 32 := 32
---		);
---		port(
---			CLK:      in std_logic;
---			RESET:    in std_logic;
---			LRCLK_I_MST:  in  std_logic;
---			BITCLK_I_MST: in  std_logic;
---			DATA_I_MST:   in  std_logic;
---			DATA_O_MST:   out std_logic;
---			LRCLK_O_SLV:  out std_logic;
---			BITCLK_O_SLV: out std_logic;
---			DATA_O_SLV:   out std_logic
---		);
---	end component i2s_to_codec;
 	
 	constant p_wb_offset_low: std_logic_vector(11 downto 0) := X"000";
 	constant p_wb_offset_hi:  std_logic_vector(11 downto 0) := X"3FF";--X"3FFFFFFF";
@@ -272,7 +254,6 @@ architecture RTL of CANDY_GW is
 			onbrd_led_pwm_out                  => LED,                          --                         pwm.pwm_out
 			i2s_bclk_mst_clk                   => CODEC_BITCLOCK,               --                i2s_bclk_mst.clk
 			i2s_lrclk_i_mst                    => CODEC_LRCLOCK,                --                         i2s.lrclk_i_mst
---			i2s_bitclk_i_mst                   => CODEC_BITCLOCK,               --                            .bitclk_i_mst
          i2s_data_i_mst                     => CODEC_DATA_OUT,               --                            .data_i_mst
          i2s_data_o_mst                     => CODEC_DATA_IN,                --                            .data_o_mst
          i2s_lrclk_o_slv                    => DAC_LRCLOCK,                  --                            .lrclk_o_slv
@@ -301,18 +282,6 @@ architecture RTL of CANDY_GW is
          sda_pad_o    => sda_o,
          sda_padoen_o => sda_oen
 		);
-		
---		u2 : i2s_to_codec generic map (DATA_WIDTH => 32) port map (
---				CLK          => CLK,
---				RESET        => RST,
---				LRCLK_I_MST  => CODEC_LRCLOCK,
---				BITCLK_I_MST => CODEC_BITCLOCK,
---				DATA_I_MST   => CODEC_DATA_OUT,
---				DATA_O_MST   => CODEC_DATA_IN,
---				LRCLK_O_SLV  => DAC_LRCLOCK,
---				BITCLK_O_SLV => DAC_BITCLOCK,
---				DATA_O_SLV   => DAC_SDO				
---		);
 		
 		-- I2C
 		sel_i_i2c <= '1' when ((wb_adr >= p_wb_i2c_low) and (wb_adr <= p_wb_i2c_hi)) else '0';

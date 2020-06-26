@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="candy_gw_qsys" kind="candy_gw_qsys" version="1.0" fabric="QSYS">
  <!-- Format version 18.1 625 (Future versions may contain additional information.) -->
- <!-- 2020.06.25.23:48:23 -->
+ <!-- 2020.06.26.08:19:46 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1593096503</value>
+  <value>1593127186</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -22994,7 +22994,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1593096503</value>
+   <value>1593127186</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -23014,7 +23014,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1593096503</value>
+   <value>1593127186</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -23030,7 +23030,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1593096503</value>
+   <value>1593127186</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
